@@ -11,12 +11,12 @@ jobs:
 
       - name: Setup Android NDK
         id: setup-ndk
-        uses: nttld/setup-ndk@v1
+        uses: nttld/setup-ndk@afb4c9964b521afb97c864b7d40b11e6911bd410 #v1.5.0@afb4c9964b521afb97c864b7d40b11e6911bd410 #v1.5.0
         with:
           ndk-version: r22b
 
       - name: Setup Ninja
-        uses: seanmiddleditch/gha-setup-ninja@master
+        uses: seanmiddleditch/gha-setup-ninja@3b1f8f94a2f8254bd26914c4ab9474d4f0015f67 #v6
 
       - name: Setup
         uses: ./.github/actions/setup

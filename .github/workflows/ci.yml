@@ -115,7 +115,7 @@ jobs:
           java-version: '17'
 
       - name: Install NDK
-        uses: nttld/setup-ndk@v1
+        uses: nttld/setup-ndk@afb4c9964b521afb97c864b7d40b11e6911bd410 #v1.5.0
         id: setup-ndk
         with:
           ndk-version: r26d
@@ -177,7 +177,7 @@ jobs:
           java-version: '17'
 
       - name: Install NDK
-        uses: nttld/setup-ndk@v1
+        uses: nttld/setup-ndk@afb4c9964b521afb97c864b7d40b11e6911bd410 #v1.5.0
         id: setup-ndk
         with:
           ndk-version: r26d
@@ -262,7 +262,7 @@ jobs:
         run: E2E=true yarn start &
 
       - name: Check APK existence
-        uses: andstor/file-existence-action@v2
+        uses: andstor/file-existence-action@20b4d2e596410855db8f9ca21e96fbe18e12930b #v2
         with:
           files: ${{ matrix.working-directory }}/android/app/build/outputs/apk/debug/app-debug.apk
           fail: true
